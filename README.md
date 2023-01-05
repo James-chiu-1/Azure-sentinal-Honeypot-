@@ -35,7 +35,7 @@ Microsoft Azure Sentinel Map with Live Cyber Attacks Lab</h1>
 
 <img src="https://i.imgur.com/t7u3loa.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-<h2>Program walk-through:</h2>
+<h2>Program walk-through PT.1:</h2>
 
 
 - <b> Create a virtual machine on Azure. We are going to setup the machine settings. This virtual machine is going to be a honeypot to attract attackers.
@@ -56,15 +56,19 @@ Microsoft Azure Sentinel Map with Live Cyber Attacks Lab</h1>
   <img src="https://i.imgur.com/r9SAx1z.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
  
  
- - <b> We are going to want to change the NIC network secuirty groups (works like a firewall, which we will want open to allow attacks). Click on advanced, then remove the current inbound rule and created a new inbound rule to, destination put a “*”, set the protocol is “any”, action set to “allow”, and priority is “100.” These settings are going to allow all traffic from the internet into the virutal machine.
+ - <b> We are going to want to change the NIC network secuirty groups (works like a firewall, which we will want open to allow attacks). Click on advanced, then remove the current inbound rule and created a new inbound rule to, destination put a “*”, set the protocol is “any”, action set to “allow”, and priority is “100”. We are going to click "review and create" and then "create". These settings are going to allow all traffic from the internet into the virutal machine.
 
  
  <img src="https://i.imgur.com/Kaq3tXy.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
  
+<h2>Program walk-through PT.2:</h2>
  
 
+ - <b> Now we want to create our own custom log that contain geographic information of attacks on our virtual machine. Once this is created we can connect our SIEM to display the geodata on the map. In order to to do this go to Log Analytics workspaces and create a workspace. Choose the virtual machine you just created. Name your workspace and make sure to set the region the same as your VM's reigon. Click on "create and review" and "create"
+ 
 
-
+<img src="https://i.imgur.com/4wkxJTj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 
 
