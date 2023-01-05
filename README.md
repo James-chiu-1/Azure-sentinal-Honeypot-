@@ -1,4 +1,4 @@
-<h1>JWipe - Microsoft Azure Sentinel Map with Live Cyber Attacks</h1>
+Microsoft Azure Sentinel Map with Live Cyber Attacks Lab</h1>
 
 
 <h2>Description</h2>
@@ -15,44 +15,48 @@
 - <b>Windows 10</b> (21H2)
 
 <h2>Utilities </h2>
-- <b>Azure Portal</b>
+
+- <b>Azure Portal</b> 
+
 - <b>Geolocation API</b> (21H2)
 
 <h2>services used </h2>
 
+- <b>Microsoft Sentinel (SIEM)</b> 
 
-<h2>Project Diagram </h2>
+- <b>Virtual Machines</b> 
+
+- <b>Log Analytics Workspaces</b> 
+
+- <b>Microsoft Defender for Cloud</b>
+
+<p align="center">
+<h2>Project Diagram:</h2>
+
+<img src="https://i.imgur.com/t7u3loa.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 <h2>Program walk-through:</h2>
 
-<p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+- <b> Create a virtual machine on Azure</b> 
+
+<img src="https://i.imgur.com/O4jmBni.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+<h2>Program walk-through:</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!--
  ```diff
@@ -66,5 +70,3 @@ Observe the wiped disk:  <br/>
 
 
 
-# Azure-sentinal-Honeypot-Lab-
-Setting up Azure Sentinel and creating a honeypot 
