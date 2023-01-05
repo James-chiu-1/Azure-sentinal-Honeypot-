@@ -81,7 +81,53 @@ Microsoft Azure Sentinel Map with Live Cyber Attacks Lab</h1>
 <img src="https://i.imgur.com/2SrD7og.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 
- - <b> Go back to Log Analytics workspace to connect it to the VM.
+- <b> Go back to Log Analytics workspace to connect it to the VM. Click Virtual Machines and then Connect.
+
+
+<img src="https://i.imgur.com/y2SDOoV.png" width="80%" alt="Disk Sanitization Steps"/>
+
+
+<h2>Program walk-through PT.4:</h2>
+
+
+- <b> create Microsoft Sentinel to visualize the attack data. look for Microsoft Sentinel, click on Add Workspace and click on "Law-honeypot1" to connect the SIEM to your VM. 
+
+
+- <b> Go to Virtual Machines and click on the VM we just made. Copy the Public IP Address.
+
+
+- <b> On your desktop click search and look for Remote Desktop Connection, then paste the public IP address. Put in the username and password you created for you VM and accept the certificate warning. Congradulations you are now in your VM. 
+
+
+<img src="https://i.imgur.com/C7bb0wr.png" width="80%" alt="Disk Sanitization Steps"/>
+
+
+Now inside your VM desktop search for Event Viewer, click on Windows Logs and then security. This will show us all the events on our VM and we are mainly going to focus on EVENT ID. We can see all the failed attemps to log into our VM  with AUDIT FAILURE. look up an ipgeolocation.io to look up IP addresses. 
+
+
+<img src="https://i.imgur.com/mTujknN.png" width="80%" alt="Disk Sanitization Steps"/>
+
+
+- <b> Next we need to turn off our firewall on the domian, private, and public profiles for attackers to have eaier access to our VM. Search wf.msc then click Windows Defender Firewall Properties
+
+
+- <b> ping your virtual machine to check if the firewall is open using the PING -t command 
+
+
+<img src="https://i.imgur.com/Elt33ed.png" width="80%" alt="Disk Sanitization Steps"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
