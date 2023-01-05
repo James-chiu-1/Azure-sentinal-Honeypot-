@@ -71,8 +71,14 @@ Microsoft Azure Sentinel Map with Live Cyber Attacks Lab</h1>
 <img src="https://i.imgur.com/4wkxJTj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 
-
-
+ <h2>Program walk-through PT.3:</h2>
+ 
+ 
+ - <b> Now we are going to enable the ablility to gather logs from the virtual machine. click on Secuirty Center, then Pricing & settings then click on the "law-honeypot1" file we created in Workspace. Now we are going to turn off SQL servers on machines and turn on Cloud Security Posture Management, dont forget to save. Click on collect events and click on all events.
+ 
+ 
+ 
+<img src="https://i.imgur.com/2SrD7og.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 
 
