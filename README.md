@@ -33,17 +33,35 @@ Microsoft Azure Sentinel Map with Live Cyber Attacks Lab</h1>
 <p align="center">
 <h2>Project Diagram:</h2>
 
-<img src="https://i.imgur.com/t7u3loa.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-
-<h2>Program walk-through:</h2>
-
-- <b> Create a virtual machine on Azure</b> 
-
-<img src="https://i.imgur.com/O4jmBni.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/t7u3loa.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 <h2>Program walk-through:</h2>
 
 
+- <b> Create a virtual machine on Azure. We are going to setup the machine settings. This virtual machine is going to be a honeypot to attract attackers.
+
+ 
+<img src="https://i.imgur.com/O4jmBni.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+ 
+- <b> Set up a username and password for your virtual machine. It's important that we allow all IP addresses to access your VM by selecting inbound ports to RDP(3389)
+ 
+ 
+ <img src="https://i.imgur.com/QO56sc8.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+ 
+ - <b> Leave Disk setting as default and go to Networking
+ 
+ 
+  <img src="https://i.imgur.com/r9SAx1z.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+ 
+ 
+ - <b> We are going to want to change the NIC network secuirty groups (works like a firewall, which we will want open to allow attacks). Click on advanced, then remove the current inbound rule and created a new inbound rule to, destination put a “*”, set the protocol is “any”, action set to “allow”, and priority is “100.” These settings are going to allow all traffic from the internet into the virutal machine.
+
+ 
+ <img src="https://i.imgur.com/Kaq3tXy.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+ 
+ 
 
 
 
