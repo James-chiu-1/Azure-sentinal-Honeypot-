@@ -81,7 +81,7 @@ Microsoft Azure Sentinel Map with Live Cyber Attacks Lab</h1>
 <img src="https://i.imgur.com/2SrD7og.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 
-
+ - <b> Go back to Log Analytics workspace to connect it to the VM.
 
 
 
