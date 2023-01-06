@@ -117,21 +117,63 @@ Now inside your VM desktop search for Event Viewer, click on Windows Logs and th
 <img src="https://i.imgur.com/Elt33ed.png" width="80%" alt="Disk Sanitization Steps"/>
 
 
+<h2>Program walk-through PT.5:</h2>
+
+
+- <b> Download a powershell script on your VM. open Powershell ISE and put in your powershell script into new and save to your desktop on your VM. now we need an API key. Simply go to the website of the script your using to get the api key. Enter the API to your Powershell ISE and then run the script. 
+ 
+ 
+ <img src="https://i.imgur.com/3qhGDER.png" width="80%" alt="Disk Sanitization Steps"/>
+
+ 
+ - <b> The data in purple is all the attacker attemping to log into your VM. You can view more information about these attacker on your Geologger where you got your API key. Now we have our custom log and script running. Go to ProgramData and look for failed_rdp file, open it and copy the contents. go onto your dedicated desktop and paste onto a notepad and save the file. 
+
+
+ <img src="https://i.imgur.com/Msz7aoK.png" width="80%" alt="Disk Sanitization Steps"/>
+
+
+- <b> On our regular desktop we are going to create a custom log inside of Log analytics workspace on Azure. This will allow the custom log with geodata into our log analytics workspace. click on your VM and then choose Custom Logs. Add to custom logs then click on add file and add the failed_rdp file. Click next and choose Windows and type "C:\ProgramDatafailed_rdp.log" on path. Then create the Custom Log.
+ 
+
+
+ <img src="https://i.imgur.com/zx5eWC4.png" width="80%" alt="Disk Sanitization Steps"/>
 
 
 
+ - <b> Go to Logs to check your custom log. select FAILED_RDP_WITH_GEP_CL. Extract one of the fields, highlight the field type you want to view on the SIEM. Change the fields to numeric and then extract. Go over the extarcted files to make sure all numeric values are properly highlighted. 
+ 
+ 
+ 
+  <img src="https://i.imgur.com/zCIsTQV.png" width="80%" alt="Disk Sanitization Steps"/>
 
+ 
+  <img src="https://i.imgur.com/poL3yQZ.png" width="80%" alt="Disk Sanitization Steps"/>
 
+ 
+  <img src="https://i.imgur.com/uycpOFj.png" width="80%" alt="Disk Sanitization Steps"/>
 
+ 
+ - <b> Go to custom logs and then custom fields to check your fields extractions
+ 
+ 
+ 
+ - <b> Now we can check Azure Sentinel to check if any incidents have occured. Go to Microsoft Sentinel and check the overview.
 
+ 
+ 
+  - <b> we need to add the geomap so click on workbook and we will add a new one 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  <img src="https://i.imgur.com/uycpOFj.png" width="80%" alt="Disk Sanitization Steps"/>
 
-
-
-
-
-
-
-
+ 
+ 
+ 
 <!--
  ```diff
 - text in red
