@@ -161,15 +161,18 @@ Now inside your VM desktop search for Event Viewer, click on Windows Logs and th
 
  
  
-  - <b> we need to add the geomap so click on workbook and we will add a new one 
+  - <b> we need to add the geomap so click on workbook and we will add a new one. Enter (FAILED_RDP_WITH_GEO_CL | summarize event_count=count() by sourcehost_CF, latitude_CF, longitude_CF, country_CF, label_CF, destinationhost_CF
+| where destinationhost_CF != "samplehost"
+| where sourcehost_CF != "")
+
+
+  - <b> Then run the query. Change visulization to map. Sit back and watch your VM get attacked. 
  
  
  
  
  
- 
- 
-  <img src="https://i.imgur.com/uycpOFj.png" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/cBBVhRi.png" width="80%" alt="Disk Sanitization Steps"/>
 
  
  
