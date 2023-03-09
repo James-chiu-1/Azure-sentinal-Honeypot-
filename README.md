@@ -1,4 +1,4 @@
-Microsoft Azure Sentenel Map with Live Cyber Attacks Lab</h1>
+Microsoft Azure Sentinel Map with Live Cyber Attacks Lab</h1>
 
 
 <h2>Description</h2>
